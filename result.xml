@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<config><entry name="a" type="number">10.0</entry><entry name="b" type="number">15.0</entry><entry name="c" type="number">3.0</entry><entry name="d" type="dict"><entry name="x" type="number">1.0</entry><entry name="y" type="number">2.0</entry></entry></config>
