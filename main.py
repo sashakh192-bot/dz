@@ -3,7 +3,7 @@ import re
 import argparse
 import xml.etree.ElementTree as ET
 
-# ----------------- Лексика -----------------
+
 
 TOKEN_REGEX = re.compile(r"""
     (?:
@@ -53,7 +53,6 @@ def tokenize(text):
     return tokens
 
 
-# ----------------- Парсер -----------------
 
 class Parser:
     def __init__(self, tokens):
@@ -152,7 +151,6 @@ class Parser:
         raise SyntaxError(f"Неизвестная операция {op}")
 
 
-# ----------------- XML -----------------
 
 def to_xml(data):
     root = ET.Element("config")
@@ -171,7 +169,6 @@ def value_to_xml(name, val):
         elem.text = str(val)
     return elem
 
-# ----------------- main -----------------
 
 def main():
     parser = argparse.ArgumentParser()
